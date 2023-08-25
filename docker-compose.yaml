@@ -5,6 +5,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: routesdb
+    volumes:
+      - ./sql-scripts:/docker-entrypoint-initdb.d
   app:
     build:
       context: .
