@@ -1,0 +1,16 @@
+POST http://localhost:8080/api/routes
+Content-Type: application/json
+
+{
+  "name": "Route 1",
+  "source": {
+    "lat": 12.34,
+    "lng": 56.78
+  },
+  "destination": {
+    "lat": 23.45,
+    "lng": 67.89
+  }
+}
+###
+GET http://localhost:8080/api/routes
